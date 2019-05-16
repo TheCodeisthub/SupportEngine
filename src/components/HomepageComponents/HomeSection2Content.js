@@ -1,5 +1,11 @@
 import React from "react"
 import BlueButton from "../modules/BlueButton"
+import Section2Item2 from "./Section2Item2"
+import Step1 from "./Step1"
+import Step2 from "./Step2"
+import Step3 from "./Step3"
+import Step4 from "./Step4"
+
 export default function HomeSection2Content() {
   return (
     <div className="container">
@@ -13,12 +19,19 @@ export default function HomeSection2Content() {
       >
         How it works
       </h2>
-      <p>
-        Your customers don’t need to suffer because you’re bussines is growing.
-        Have an experienced customre service rep for a for a fraction of the
-        usual cost
-      </p>
-      <BlueButton>Request an agent</BlueButton>
+      <div className="section2_group">
+        <span className="section2marker">
+          {" "}
+          <Section2Item2 />
+        </span>
+        <div className="contain-steps">
+          <Step1 />
+          <Step2 />
+          <Step3 />
+          <Step4 />
+        </div>
+        <BlueButton>Request an agent</BlueButton>
+      </div>
     </div>
   )
 }

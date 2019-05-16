@@ -1,10 +1,10 @@
 import React from "react"
-import img1 from "../../images/businessman.svg"
+import vector2 from "../../images/connecting_teams.svg"
+import Section2Item2 from "./Section2Item2"
 
-export default function Section2Item1() {
+export default function Step2() {
   return (
-    <div>
-      <img src={img} width="226px" alt="Business Man" />
+    <div className="item1-c">
       <p
         style={{
           width: "248px",
@@ -15,6 +15,12 @@ export default function Section2Item1() {
       >
         We find an agent who’s skills best matches your bussiness needs
       </p>
+      <img
+        className="space_up"
+        src={vector2}
+        width="226.03px"
+        alt="Business Man"
+      />
     </div>
   )
 }
