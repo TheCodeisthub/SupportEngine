@@ -1,0 +1,10 @@
+.blue_btn {
+  display: inline-block;
+  background: #4834d4;
+  color: #fff;
+  font-size: 24px;
+  padding: 0.4em 1em;
+  border-radius: 15px;
+  text-align: center;
+  margin-top: 4vh;
+}
