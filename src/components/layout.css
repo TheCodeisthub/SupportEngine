@@ -375,7 +375,7 @@ a {
   /* margin: auto; */
   text-align: center;
 }
-.card_icon a {
+.card_icon img {
   padding-inline-end: 1em;
 }
 .title {

@@ -20,18 +20,10 @@ const AboutProfile = () => {
         </p>
         <div
           className="card_icon"
-          style={{ margin: "24px 0", padding: "20px" }}
-        >
-          <a href="">
-            <img src={twitter} alt="twitter" />
-          </a>
-          <a href="">
-            <img src={linkedin} alt="linkedin" />
-          </a>
+          style={{ margin: "24px 0", padding: "20px" }}>
+          <img src={twitter} alt="twitter" />
+          <img src={linkedin} alt="linkedin" />
         </div>
-        {/* <p>
-          <button className="about_button">Contact</button>
-        </p> */}
       </div>
     </section>
   )

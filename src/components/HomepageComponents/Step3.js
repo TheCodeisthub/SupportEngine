@@ -1,6 +1,5 @@
 import React from "react"
 import vector3 from "../../images/agreement.svg"
-import Section2Item2 from "./Section2Item2"
 
 export default function Step3() {
   return (

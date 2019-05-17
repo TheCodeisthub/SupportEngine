@@ -1,6 +1,5 @@
 import React from "react"
 import vector2 from "../../images/connecting_teams.svg"
-import Section2Item2 from "./Section2Item2"
 
 export default function Step2() {
   return (
