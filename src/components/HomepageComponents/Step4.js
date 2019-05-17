@@ -1,6 +1,5 @@
 import React from "react"
 import vector4 from "../../images/working_agent.svg"
-import Section2Item2 from "./Section2Item2"
 
 export default function Step4() {
   return (

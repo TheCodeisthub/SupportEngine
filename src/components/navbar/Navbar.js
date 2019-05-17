@@ -14,7 +14,7 @@ class Navbar extends Component {
   }
   render() {
     return (
-      <header className="nav--header">
+      <header className="nav--header" id="navbar">
         <nav className="nav container">
           <NavbarHeader handleNavbar={this.handleNavbar} />
           <NavbarLinks navbarClicked={this.state.navbarClicked} />
