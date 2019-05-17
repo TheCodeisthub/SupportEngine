@@ -27,7 +27,6 @@ const IndexPage = () => (
       </HomeSection3>
 
       <HomeSection4Content />
-      {/* <Image /> */}
     </div>
   </Layout>
 )

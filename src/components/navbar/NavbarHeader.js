@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import logo from "../../images/logo.svg"
+import logo from "../../images/Logo.svg"
 
 class NavbarHeader extends Component {
   render() {
