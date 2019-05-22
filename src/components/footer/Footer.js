@@ -6,9 +6,15 @@ export default function Footer() {
     <div className="footer--bg">
       <footer className="container">
         <FooterLinks />
-        <p>
+        <p
+          style={{
+            borderTop: "1px solid #eee",
+            textAlign: "center",
+            marginTop: "8vh",
+          }}
+        >
           © {new Date().getFullYear()}
-          {` `}
+          {` `}Support Engine
         </p>
       </footer>
     </div>

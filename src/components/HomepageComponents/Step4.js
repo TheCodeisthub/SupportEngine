@@ -1,25 +1,25 @@
 import React from "react"
 import vector4 from "../../images/working_agent.svg"
+import { Steps4 } from "./Section2Item2"
 
 export default function Step4() {
   return (
     <div className="item1-c">
-      <p
-        style={{
-          width: "248px",
-          fontWeight: "bold",
-          fontSize: "18px",
-          textAlign: "center",
-        }}
-      >
-        The agents starts working on your bussiness and delighting customer
-      </p>
-      <img
-        className="space_up"
-        src={vector4}
-        width="216px"
-        alt="Business Man"
-      />
+      <img src={vector4} width="384.75" height="353" alt="Business Man" />
+      <aside>
+        <Steps4 />
+        <h2 style={{ fontWeight: "500", fontSize: "36px" }}>Support begins</h2>
+        <p
+          style={{
+            width: "370px",
+            fontWeight: "300",
+            fontSize: "24px",
+            // textAlign: "center",
+          }}
+        >
+          The agent starts working on your bussiness and delighting customer.{" "}
+        </p>
+      </aside>
     </div>
   )
 }

@@ -13,21 +13,19 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div>
-      <HomeHeader>
-        <HomeHeaderContent />
-      </HomeHeader>
+    <HomeHeader>
+      <HomeHeaderContent />
+    </HomeHeader>
 
-      <HomeSection2>
-        <HomeSection2Content />
-      </HomeSection2>
+    <HomeSection2>
+      <HomeSection2Content />
+    </HomeSection2>
 
-      <HomeSection3>
-        <HomeSection3Content />
-      </HomeSection3>
+    <HomeSection3>
+      <HomeSection3Content />
+    </HomeSection3>
 
-      <HomeSection4Content />
-    </div>
+    <HomeSection4Content />
   </Layout>
 )
 
