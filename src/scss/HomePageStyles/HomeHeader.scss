@@ -16,7 +16,7 @@
     // display: grid;
     // grid-template-columns: var(--g-temp-col-1);
     color: #fff;
-    margin-top: 5vh;
+    margin-top: 15vh;
 
     @include desktop {
       display: grid;
@@ -24,7 +24,6 @@
       grid-template-columns: var(--g-temp-col-2);
       color: #fff;
       text-align: left;
-      margin-top: 15vh;
     }
   }
 
