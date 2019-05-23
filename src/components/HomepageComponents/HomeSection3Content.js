@@ -6,8 +6,8 @@ import Icon3 from "../../images/icon3.png"
 
 export default function HomeSection3Content() {
   return (
-    <div className="section3">
-      <div className="container section3_grid">
+    <div className="container">
+      <div className="home__section3--content">
         <CardStyles>
           <img src={Icon1} width="105px" alt="icons" />
           <h2>Proffessional</h2>

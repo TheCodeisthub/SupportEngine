@@ -1,0 +1,27 @@
+@import "../media-reset";
+
+.home__section3--bg {
+  background: linear-gradient(
+    172.36deg,
+    #6c63ff -10.69%,
+    #4834d4 -10.68%,
+    #00b0ff 82.4%
+  );
+  height: 1342px;
+
+  @include desktop {
+    height: 85vh;
+  }
+
+  .home__section3--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      display: grid;
+      grid-column-gap: 2em;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

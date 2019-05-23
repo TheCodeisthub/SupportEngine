@@ -5,7 +5,7 @@ import { Steps3 } from "./Section2Item2"
 export default function Step3() {
   return (
     <div className="item1-c">
-      <aside>
+      <aside className="item5">
         <Steps3 />
         <h2 style={{ fontWeight: "500", fontSize: "36px" }}>Onboard once</h2>
         <p
@@ -19,7 +19,9 @@ export default function Step3() {
           You onboard us as you would any customer support rep.{" "}
         </p>
       </aside>
-      <img src={vector3} width="384.75" height="353" alt="Business Man" />
+      <aside className="item6">
+        <img src={vector3} width="384.75" height="353" alt="Business Man" />
+      </aside>
     </div>
   )
 }

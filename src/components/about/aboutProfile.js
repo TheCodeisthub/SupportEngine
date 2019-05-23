@@ -7,7 +7,7 @@ import linkedin from "../../images/linkedin.svg"
 const AboutProfile = () => {
   return (
     <section>
-      <div class="card">
+      <div class="about--card">
         <img
           src={avatar}
           alt="Lenny"
@@ -19,8 +19,9 @@ const AboutProfile = () => {
           SupportEngine
         </p>
         <div
-          className="card_icon"
-          style={{ margin: "24px 0", padding: "20px" }}>
+          className="about__card--icon"
+          style={{ margin: "24px 0", padding: "20px" }}
+        >
           <img src={twitter} alt="twitter" />
           <img src={linkedin} alt="linkedin" />
         </div>

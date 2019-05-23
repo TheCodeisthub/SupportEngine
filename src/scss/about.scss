@@ -1,0 +1,36 @@
+.about_wrapper {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.about_container {
+  @include desktop {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: var(--g-temp-col-2);
+  }
+
+  .about--card {
+    @include desktop {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 14px;
+      max-width: 350px;
+      /* margin: auto; */
+      text-align: center;
+    }
+
+    .about__card--icon img {
+      padding-inline-end: 1em;
+    }
+    .title {
+      color: grey;
+      font-size: 18px;
+    }
+  }
+}
+.sec2p p {
+  @include desktop {
+    font-weight: 400;
+    font-size: 20px;
+    width: 743px;
+  }
+}

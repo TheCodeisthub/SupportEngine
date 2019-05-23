@@ -12,7 +12,7 @@ import PropTypes from "prop-types"
 import Navbar from "../components/navbar/Navbar"
 import Footer from "../components/footer/Footer"
 
-import "./layout.css"
+import "../scss/layout.scss"
 
 const Layout = ({ children }) => {
   return (

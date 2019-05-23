@@ -1,19 +1,19 @@
 import React from "react"
 
 const Steps1 = () => {
-  return <div className="steps">1</div>
+  return <div className="section2--marker">1</div>
 }
 
 const Steps2 = () => {
-  return <div className="steps">2</div>
+  return <div className="section2--marker">2</div>
 }
 
 const Steps3 = () => {
-  return <div className="steps">3</div>
+  return <div className="section2--marker">3</div>
 }
 
 const Steps4 = () => {
-  return <div className="steps">4</div>
+  return <div className="section2--marker">4</div>
 }
 
 export { Steps1, Steps2, Steps3, Steps4 }

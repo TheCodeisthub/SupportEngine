@@ -129,7 +129,6 @@ a {
   grid-template-columns: var(--g-temp-col-2);
   color: #fff;
   margin-top: 25vh;
-  /* margin-top: 20vh; */
 }
 
 .homeheader {
@@ -360,6 +359,7 @@ a {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
   opacity: 1;
 }
+
 .footer--bg {
   background: #3a3768;
   color: #fff;
@@ -369,6 +369,7 @@ a {
 .footer--links {
   color: #fff;
 }
+
 .footer--lists {
   display: flex;
   align-items: center;

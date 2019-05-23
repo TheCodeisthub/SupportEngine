@@ -5,8 +5,7 @@ import { Steps2 } from "./Section2Item2"
 export default function Step2() {
   return (
     <div className="item1-c">
-      <img src={vector2} width="384.75" height="353" alt="Business Man" />
-      <aside>
+      <aside className="item3">
         <Steps2 />
         <h2 style={{ fontWeight: "500", fontSize: "36px" }}>We find a match</h2>
         <p
@@ -20,6 +19,9 @@ export default function Step2() {
           We’ll pair you with an agent who’s skills best matches your bussiness
           needs{" "}
         </p>
+      </aside>
+      <aside className="item4">
+        <img src={vector2} width="384.75" height="353" alt="Business Man" />
       </aside>
     </div>
   )

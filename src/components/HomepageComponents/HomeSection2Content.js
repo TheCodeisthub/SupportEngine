@@ -9,19 +9,9 @@ import Step4 from "./Step4"
 export default function HomeSection2Content() {
   return (
     <div className="container">
-      <h2
-        style={{
-          fontWeight: "300",
-          fontSize: "72px",
-          color: "#4834D4",
-          textAlign: "center",
-          marginTop: "20vh",
-        }}
-      >
-        How it works
-      </h2>
-      <div className="section2_group">
-        <div className="contain-steps">
+      <h2 className="all__section--h2">How it works</h2>
+      <div className="home__section2--container">
+        <div className="steps__container">
           <Step1 />
           <Step2 />
           <Step3 />
