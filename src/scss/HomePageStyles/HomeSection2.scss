@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding-top: 15vh;
 
     @include desktop {
@@ -28,6 +29,7 @@
       //   grid-column: 2 / 2;
       //   grid-row: 1 / 1;
       // }
+
       .item3 {
         grid-column: 2 / 2;
         grid-row: 2 / 2;
@@ -52,6 +54,16 @@
   }
   .steps__container {
     margin-bottom: 10vh;
+  }
+
+  .marker__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
   }
 
   .section2--marker {

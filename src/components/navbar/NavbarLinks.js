@@ -23,7 +23,7 @@ class NavbarLinks extends Component {
   }
   render() {
     return (
-      <ul className="nav--lists">
+      <ul className="nav--lists" clicked={this.props.navbarClicked}>
         {this.state.links.map(item => {
           return (
             <li key={item.id}>
