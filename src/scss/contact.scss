@@ -20,9 +20,13 @@
 
   .input-c {
     display: grid;
-    grid-column-gap: 2em;
-    grid-template-columns: var(--g-temp-col-2);
-    margin-bottom: 2em;
+    grid-template-columns: var(--g-temp-col-1);
+
+    @include desktop {
+      grid-column-gap: 2em;
+      grid-template-columns: var(--g-temp-col-2);
+      margin-bottom: 2em;
+    }
   }
 
   .input-c input {

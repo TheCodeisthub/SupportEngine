@@ -10,12 +10,14 @@
   }
 
   .about--card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 4rem;
     @include desktop {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      border-radius: 14px;
       max-width: 350px;
+      margin: 0;
       /* margin: auto; */
-      text-align: center;
     }
 
     .about__card--icon img {

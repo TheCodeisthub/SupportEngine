@@ -9,20 +9,16 @@ const ContactPage = () => (
     <SEO title="Contact" keywords={[`supportengine`, `contact us`, `form`]} />
     <section className="container contact_c">
       <h2
-        style={{
-          fontWeight: "300",
-          fontSize: "72px",
-          color: "#4834D4",
-          textAlign: "center",
-        }}
+        className="all__section--h2"
+        style={{ lineHeight: "1", textAlign: "center", marginBottom: "2rem" }}
       >
         Get in touch with us
       </h2>
-      <p style={{ textAlign: "center" }}>
+      <p style={{ textAlign: "left" }}>
         You can reach us directly by sending us an email at
         contact@supportengine.com
       </p>
-      <p style={{ textAlign: "center", marginBottom: "10vh" }}>
+      <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         Alternatetivly, you can use the contact form below.
       </p>
       <form className="contact_form">

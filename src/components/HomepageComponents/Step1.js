@@ -4,7 +4,7 @@ import { Steps1 } from "./Section2Item2"
 
 export default function Step1() {
   return (
-    <div className="item1-c">
+    <div className="item1-c item1-aside">
       <aside className="item1">
         <Steps1 />
         <h2 style={{ fontWeight: "500", fontSize: "36px" }}>
