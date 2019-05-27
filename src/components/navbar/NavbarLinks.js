@@ -62,6 +62,7 @@ const LinkWrapper = styled.ul`
         opacity: 0.7;
       }
     }
+    padding-inline-end: 2rem;
   }
   height: ${props => (props.open ? "152px" : "0px")};
   overflow: hidden;

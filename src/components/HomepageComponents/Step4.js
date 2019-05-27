@@ -7,20 +7,19 @@ export default function Step4() {
     <div className="item1-c">
       <aside className="item7">
         <Steps4 />
-        <h2 style={{ fontWeight: "500", fontSize: "36px" }}>Support begins</h2>
-        <p
-          style={{
-            width: "370px",
-            fontWeight: "300",
-            fontSize: "24px",
-            // textAlign: "center",
-          }}
-        >
+        <h2 className="sec2--h2">Support begins</h2>
+        <p className="sec2--p">
           The agent starts working on your bussiness and delighting customer.{" "}
         </p>
       </aside>
       <aside className="item8">
-        <img src={vector4} width="384.75" height="353" alt="Business Man" />
+        <img
+          className="section2--img"
+          src={vector4}
+          width="384.75"
+          height="353"
+          alt="Agents Working"
+        />
       </aside>
     </div>
   )

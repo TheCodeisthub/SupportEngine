@@ -20,6 +20,13 @@
       /* margin: auto; */
     }
 
+    .avatar {
+      width: 300px;
+      height: 300px;
+      border-radius: var(--br-50pc);
+      object-fit: cover;
+    }
+
     .about__card--icon img {
       padding-inline-end: 1em;
     }

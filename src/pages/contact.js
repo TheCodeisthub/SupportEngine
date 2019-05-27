@@ -15,13 +15,18 @@ const ContactPage = () => (
         Get in touch with us
       </h2>
       <p style={{ textAlign: "left" }}>
-        You can reach us directly by sending us an email at
-        contact@supportengine.com
+        You can reach us directly by sending us an email at{" "}
+        <a href="lenny@b2bcontentlab.com">contact@supportengine.com</a>
       </p>
       <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         Alternatetivly, you can use the contact form below.
       </p>
-      <form className="contact_form">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        className="contact_form"
+      >
         <div className="input-c">
           <label>
             Your Name
@@ -46,7 +51,9 @@ const ContactPage = () => (
           }}
         >
           {" "}
-          <input className="btn_submit" type="submit" value="Submit" />
+          <button type="submit" className="btn_submit">
+            Submit
+          </button>
         </span>
       </form>
     </section>

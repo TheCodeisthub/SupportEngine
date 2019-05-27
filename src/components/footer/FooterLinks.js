@@ -19,9 +19,10 @@ class FooterLinks extends Component {
       {
         title: "Legal",
         id: 2,
-        path: "/",
+        path: "/privacy",
         name: "Privacy Policy",
-        name1: "Teams and conditions",
+        path1: "/terms",
+        name1: "Terms and conditions",
       },
     ],
   }
@@ -37,7 +38,7 @@ class FooterLinks extends Component {
               <Link to={item.path} className="footer--links">
                 <li> {item.name}</li>
               </Link>
-              <Link to={item.path} className="footer--links">
+              <Link to={item.path1} className="footer--links">
                 <li> {item.name1}</li>
               </Link>
             </li>
