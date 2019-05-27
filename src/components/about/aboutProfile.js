@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import avatar from "../../images/Lenny_johnson.png"
+import avatar from "../../images/Lenny_Johnson.png"
 import twitter from "../../images/twitter.svg"
 import linkedin from "../../images/linkedin.svg"
 import email from "../../images/email.svg"
