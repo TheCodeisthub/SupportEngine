@@ -59,7 +59,11 @@ const ContactPage = () => (
 
         <label>
           Message us
-          <textarea placeholder="Hello support engine..." required />
+          <textarea
+            name="message"
+            placeholder="Hello support engine..."
+            required
+          />
         </label>
         <span
           style={{

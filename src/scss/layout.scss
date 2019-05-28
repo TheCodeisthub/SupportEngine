@@ -211,6 +211,19 @@ a:hover {
 //   }
 // }
 
+.page_not_found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+
+  & img {
+    width: 500px;
+  }
+}
+
 .footer--bg {
   background: #3a3768;
   color: #fff;
