@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const PrivacyPolicy = () => (
   <Layout>
     <SEO
-      title="About"
+      title="Data Policy"
       keywords={[`supportengine`, `Privacy Policy`, `bussiness suport`]}
     />
     <section className="container">

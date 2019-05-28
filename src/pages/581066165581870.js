@@ -7,8 +7,8 @@ import SEO from "../components/seo"
 const TermsAndConditions = () => (
   <Layout>
     <SEO
-      title="About"
-      keywords={[`supportengine`, `Privacy Policy`, `bussiness suport`]}
+      title="Terms of Service"
+      keywords={[`supportengine`, `Terms of Service`, `bussiness suport`]}
     />
     <section className="container">
       <div className="t__container">

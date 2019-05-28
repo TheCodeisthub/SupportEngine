@@ -19,9 +19,9 @@ class FooterLinks extends Component {
       {
         title: "Legal",
         id: 2,
-        path: "/privacy",
+        path: "/519522125107875/",
         name: "Privacy Policy",
-        path1: "/terms",
+        path1: "/581066165581870/",
         name1: "Terms and conditions",
       },
     ],

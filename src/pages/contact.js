@@ -27,7 +27,29 @@ const ContactPage = () => (
       <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         Alternatetivly, you can use the contact form below.
       </p>
-      <form
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" />
+          </label>
+        </p>
+
+        <p>
+          <label>
+            Message: <textarea name="message" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+
+      {/* <form
         name="contact"
         method="POST"
         data-netlify="true"
@@ -77,7 +99,7 @@ const ContactPage = () => (
             Submit
           </button>
         </span>
-      </form>
+      </form> */}
     </section>
   </Layout>
 )
