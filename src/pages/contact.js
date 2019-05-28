@@ -1,83 +1,38 @@
 import React from "react"
-import { navigateTo } from "gatsby-link"
+// import { Link } from "gatsby"
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&")
-}
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
+import Contact from "../components/contact"
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
-
-  handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error))
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>Contact</h1>
-        <form
-          name="contact"
-          method="post"
-          action="/thanks/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
+const ContactPage = () => (
+  <Layout>
+    <SEO title="Contact" keywords={[`supportengine`, `contact us`, `form`]} />
+    <section className="container contact_c">
+      <h2
+        className="all__section--h2"
+        style={{ lineHeight: "1", textAlign: "center", marginBottom: "2rem" }}
+      >
+        Get in touch with us
+      </h2>
+      <p style={{ textAlign: "left" }}>
+        You can reach us directly by sending us an email at{" "}
+        <a
+          href="lenny@b2bcontentlab.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your name:
-              <br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:
-              <br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-      </div>
-    )
-  }
-}
+          contact@supportengine.com
+        </a>
+      </p>
+      <p style={{ textAlign: "left", marginBottom: "10vh" }}>
+        Alternatetivly, you can use the contact form below.
+      </p>
+
+      <Contact />
+    </section>
+  </Layout>
+)
+
+export default ContactPage
