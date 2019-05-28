@@ -24,13 +24,25 @@ const AboutProfile = () => {
           className="about__card--icon"
           style={{ margin: "24px 0", padding: "20px" }}
         >
-          <a href="https://twitter.com/TheLennyJohnson">
+          <a
+            href="https://twitter.com/TheLennyJohnson"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={twitter} width="60px" alt="twitter" />
           </a>
-          <a href="https://www.linkedin.com/in/lenny-johnson-606b19146">
+          <a
+            href="https://www.linkedin.com/in/lenny-johnson-606b19146"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedin} width="60px" alt="linkedin" />
           </a>
-          <a href="lenny@b2bcontentlab.com">
+          <a
+            href="lenny@b2bcontentlab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={email} width="60px" alt="email" />
           </a>
         </div>

@@ -24,9 +24,21 @@ const AboutText = () => {
       <br />
       <p>
         I'm on twitter{" "}
-        <a href="https://twitter.com/TheLennyJohnson">@thelennyJohnson</a> or
-        you can just email me at{" "}
-        <a href="lenny@b2bcontentlab.com">lenny@supportengine.com</a>
+        <a
+          href="https://twitter.com/TheLennyJohnson"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @thelennyJohnson
+        </a>{" "}
+        or you can just email me at{" "}
+        <a
+          href="lenny@b2bcontentlab.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          lenny@supportengine.com
+        </a>
       </p>
     </section>
   )

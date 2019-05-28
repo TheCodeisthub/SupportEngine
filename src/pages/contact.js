@@ -16,7 +16,13 @@ const ContactPage = () => (
       </h2>
       <p style={{ textAlign: "left" }}>
         You can reach us directly by sending us an email at{" "}
-        <a href="lenny@b2bcontentlab.com">contact@supportengine.com</a>
+        <a
+          href="lenny@b2bcontentlab.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          contact@supportengine.com
+        </a>
       </p>
       <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         Alternatetivly, you can use the contact form below.
@@ -30,18 +36,30 @@ const ContactPage = () => (
         <div className="input-c">
           <label>
             Your Name
-            <input type="text" placeholder="John Doe" />
+            <input
+              type="text"
+              name="name"
+              placeholder="John Doe"
+              autoComplete
+              required
+            />
           </label>
 
           <label>
             Your Email
-            <input type="text" placeholder="Johndoe@mail.com" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Johndoe@mail.com"
+              autoComplete
+              required
+            />
           </label>
         </div>
 
         <label>
           Message us
-          <textarea placeholder="Hello support engine..." />
+          <textarea placeholder="Hello support engine..." required />
         </label>
         <span
           style={{
