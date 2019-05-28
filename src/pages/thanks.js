@@ -1,8 +1,14 @@
 import React from "react"
 
-export default () => (
-  <div>
-    <h1>Thank you!</h1>
-    <p>This is a custom thank you page for form submissions</p>
-  </div>
+import Layout from "../components/layout"
+import Modal from "../components/modal"
+
+const Thanks = () => (
+  <Layout>
+    <div className="container">
+      <Modal />
+    </div>
+  </Layout>
 )
+
+export default Thanks
