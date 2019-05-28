@@ -33,6 +33,15 @@ const ContactPage = () => (
         method="POST"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+      >
+        <input name="name" placeholder="John Doe" type="text" />
+      </form>
+
+      {/* <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
         className="contact_form"
       >
         <div className="input-c">
@@ -79,7 +88,7 @@ const ContactPage = () => (
             Submit
           </button>
         </span>
-      </form>
+      </form> */}
 
       {/* <form name="contact" method="POST" data-netlify="true">
       <p>
