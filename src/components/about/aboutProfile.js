@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import avatar from "../../images/Lenny_Johnson.png"
+import avatar from "../../images/Lenny_Johnson.jpg"
 import twitter from "../../images/twitter.svg"
 import linkedin from "../../images/linkedin.svg"
 import email from "../../images/email.svg"
@@ -13,7 +13,7 @@ const AboutProfile = () => {
           className="avatar"
           src={avatar}
           alt="Lenny Johnson"
-          style={{ width: "300px", height: "300px", marginTop: "5px" }}
+          style={{ width: "300px", height: "300px", marginTop: "7px" }}
         />
         <h1>Lenny Johnson</h1>
         <p className="title">
