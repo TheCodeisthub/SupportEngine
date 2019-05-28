@@ -35,6 +35,7 @@ const ContactPage = () => (
         data-netlify-honeypot="bot-field"
       >
         <input name="name" placeholder="John Doe" type="text" />
+        <button type="submit">Send</button>
       </form>
 
       {/* <form
