@@ -1,120 +1,83 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { navigateTo } from "gatsby-link"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
 
-const ContactPage = () => (
-  <Layout>
-    <SEO title="Contact" keywords={[`supportengine`, `contact us`, `form`]} />
-    <section className="container contact_c">
-      <h2
-        className="all__section--h2"
-        style={{ lineHeight: "1", textAlign: "center", marginBottom: "2rem" }}
-      >
-        Get in touch with us
-      </h2>
-      <p style={{ textAlign: "left" }}>
-        You can reach us directly by sending us an email at{" "}
-        <a
-          href="lenny@b2bcontentlab.com"
-          target="_blank"
-          rel="noopener noreferrer"
+export default class Contact extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  handleChange = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
+  handleSubmit = e => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(() => navigateTo(form.getAttribute("action")))
+      .catch(error => alert(error))
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Contact</h1>
+        <form
+          name="contact"
+          method="post"
+          action="/thanks/"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          onSubmit={this.handleSubmit}
         >
-          contact@supportengine.com
-        </a>
-      </p>
-      <p style={{ textAlign: "left", marginBottom: "10vh" }}>
-        Alternatetivly, you can use the contact form below.
-      </p>
-
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="name" value="contact" />
-        <input name="name" placeholder="John" type="text" />
-        <button type="submit">Send</button>
-      </form>
-
-      {/* <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        className="contact_form"
-      >
-        <div className="input-c">
-          <label>
-            Your Name
-            <input
-              type="text"
-              name="name"
-              placeholder="John Doe"
-              autoComplete
-              required
-            />
-          </label>
-
-          <label>
-            Your Email
-            <input
-              type="email"
-              name="email"
-              placeholder="Johndoe@mail.com"
-              autoComplete
-              required
-            />
-          </label>
-        </div>
-
-        <label>
-          Message us
-          <textarea
-            name="message"
-            placeholder="Hello support engine..."
-            required
-          />
-        </label>
-        <span
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-          }}
-        >
-          {" "}
-          <button type="submit" className="btn_submit">
-            Submit
-          </button>
-        </span>
-      </form> */}
-
-      {/* <form name="contact" method="POST" data-netlify="true">
-      <p>
-        <label>
-          Your Name: <input type="text" name="name" />
-        </label>
-      </p>
-      <p>
-        <label>
-          Your Email: <input type="email" name="email" />
-        </label>
-      </p>
-    
-      <p>
-        <label>
-          Message: <textarea name="message" />
-        </label>
-      </p>
-      <p>
-        <button type="submit">Send</button>
-      </p>
-    </form> */}
-    </section>
-  </Layout>
-)
-
-export default ContactPage
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your name:
+              <br />
+              <input type="text" name="name" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your email:
+              <br />
+              <input type="email" name="email" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message:
+              <br />
+              <textarea name="message" onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+    )
+  }
+}
