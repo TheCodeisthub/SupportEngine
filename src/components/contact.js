@@ -95,11 +95,22 @@ export default class Contact extends React.Component {
               />
             </label>
           </p>
+
+          <h4 title="Important">
+            GDPR Agreement <i style={{ color: "red" }}>*</i>
+          </h4>
+          <label style={{ fontWeight: "400" }} class="r-sidebar--label">
+            I consent to having Support Engine store my submitted information
+            and contacting me with it.
+            <input type="checkbox" required />
+            <span class="checkmark" />
+          </label>
+
           <p
             style={{
               display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
             }}
           >
             <button className="btn_submit" type="submit">
