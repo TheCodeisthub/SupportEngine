@@ -9,7 +9,7 @@ export default function Step3() {
         <Steps3 />
         <h2 className="sec2--h2">Onboard once</h2>
         <p className="sec2--p">
-          You onboard us as you would any customer support rep.{" "}
+          You onboard us as you would any customer support rep.
         </p>
       </aside>
       <aside className="item6">

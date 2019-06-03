@@ -10,7 +10,7 @@ export default function Step2() {
         <h2 className="sec2--h2">We find a match</h2>
         <p className="sec2--p">
           We’ll pair you with an agent who’s skills best matches your bussiness
-          needs{" "}
+          needs.
         </p>
       </aside>
       <aside className="item4">

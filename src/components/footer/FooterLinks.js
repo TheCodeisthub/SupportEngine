@@ -14,7 +14,7 @@ class FooterLinks extends Component {
         title: "Contact",
         id: 1,
         // path: "/contact/",
-        name: "contact@supportengine.io",
+        name: "contact@supportengine.com",
       },
       {
         title: "Legal",

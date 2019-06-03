@@ -17,17 +17,19 @@ const ContactPage = () => (
         Get in touch with us
       </h2>
       <p style={{ textAlign: "left" }}>
-        You can reach us directly by sending us an email at{" "}
+        If you need a support agent to help you scale your business or if you
+        want to learn more about how we work feel free to reach out to us.
+      </p>
+      <p style={{ textAlign: "left", marginBottom: "10vh" }}>
+        You can send us an email directly at{" "}
         <a
           href="lenny@b2bcontentlab.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           contact@supportengine.com
-        </a>
-      </p>
-      <p style={{ textAlign: "left", marginBottom: "10vh" }}>
-        Alternatetivly, you can use the contact form below.
+        </a>{" "}
+        or you can use the contact form below.
       </p>
 
       <Contact />

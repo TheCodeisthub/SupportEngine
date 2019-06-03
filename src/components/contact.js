@@ -89,7 +89,7 @@ export default class Contact extends React.Component {
               <br />
               <textarea
                 name="message"
-                placeholder="Your message"
+                placeholder="Tell us about your business..."
                 required
                 onChange={this.handleChange}
               />

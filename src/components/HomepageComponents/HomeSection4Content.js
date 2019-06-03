@@ -34,8 +34,8 @@ class HomeSection4Content extends Component {
                   </span>
                   {on && (
                     <li>
-                      - As of yet SupportEngine don’t offer 24/7 support. We
-                      have only the 8HOUR support window.
+                      We don’t yet offer 24/7 support, we have only the standard
+                      8 hour support window.
                     </li>
                   )}
                 </ul>
@@ -56,8 +56,8 @@ class HomeSection4Content extends Component {
                     </span>
                     {on && (
                       <li>
-                        - Phone support isn’t currently available but will be
-                        soon
+                        Phone support isn’t currently available but will be
+                        soon. soon
                       </li>
                     )}
                   </ul>
@@ -71,7 +71,7 @@ class HomeSection4Content extends Component {
                   <ul>
                     <span className="drop-down--container" onClick={toggle}>
                       <h4 style={{ fontSize: "24px", color: "#3A3768" }}>
-                        Why are your support so low?
+                        Why are your costs so low?
                       </h4>
                       <button className="btn_arrow">
                         <img src={toggleIcon} alt="dropdown icon" />
@@ -79,8 +79,8 @@ class HomeSection4Content extends Component {
                     </span>
                     {on && (
                       <li>
-                        - We can keep costs low because our agents live in
-                        regions of the world with lower cost of living{" "}
+                        We can keep costs low because our agents live in regions
+                        of the world with lower cost of living.
                       </li>
                     )}
                   </ul>
@@ -102,8 +102,31 @@ class HomeSection4Content extends Component {
                     </span>
                     {on && (
                       <li>
-                        - We Have agent support in the Phillipins, Nigeria,
-                        Kenya and India{" "}
+                        We have support agents in the Phillipins, Nigeria, Kenya
+                        and India.
+                      </li>
+                    )}
+                  </ul>
+                </div>
+              )}
+            </Toggle>
+
+            <Toggle>
+              {({ on, toggle }) => (
+                <div>
+                  <ul>
+                    <span className="drop-down--container" onClick={toggle}>
+                      <h4 style={{ fontSize: "24px", color: "#3A3768" }}>
+                        How well do your support agents understand English?
+                      </h4>
+                      <button className="btn_arrow">
+                        <img src={toggleIcon} alt="dropdown icon" />
+                      </button>
+                    </span>
+                    {on && (
+                      <li>
+                        Every agent is fluent in English and undergoes an
+                        English proficiency test before they're hired.
                       </li>
                     )}
                   </ul>
@@ -131,7 +154,10 @@ class HomeSection4Content extends Component {
               marginTop: "15vh",
             }}
           >
-            <p>Do you have a question that is not covered above?</p>
+            <p>
+              Do you have a question that's not covered above? Feel free to
+              reach out to us.
+            </p>
             <Link to="/contact">
               <BlueButton>Contact us</BlueButton>
             </Link>

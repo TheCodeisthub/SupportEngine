@@ -10,7 +10,7 @@ export default function HomeHeaderContent() {
         <div>
           <h3 className="home__section1--h3">
             Get a dedicated customer support agent for just{" "}
-            <span style={{ fontWeight: "bold" }}>$749</span> a month
+            <span style={{ fontWeight: "bold" }}>$799</span> a month
           </h3>
           <p className="home-section1--p">
             Your customers shouldn’t have to suffer because your bussines is

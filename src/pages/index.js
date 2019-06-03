@@ -9,6 +9,7 @@ import HomeSection2Content from "../components/HomepageComponents/HomeSection2Co
 import HomeSection3Content from "../components/HomepageComponents/HomeSection3Content"
 import HomeSection4Content from "../components/HomepageComponents/HomeSection4Content"
 import SEO from "../components/seo"
+import HomeSection5 from "../components/HomepageComponents/HomeSection5"
 
 const IndexPage = () => (
   <Layout>
@@ -25,6 +26,7 @@ const IndexPage = () => (
       <HomeSection3Content />
     </HomeSection3>
 
+    <HomeSection5 text="Satisfaction Guaranteed" />
     <HomeSection4Content />
   </Layout>
 )
