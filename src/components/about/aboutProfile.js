@@ -17,7 +17,7 @@ const AboutProfile = () => {
         />
         <h1>Lenny Johnson</h1>
         <p className="title">
-          CEO & Founder, <br />
+          Founder, <br />
           SupportEngine
         </p>
         <div
@@ -39,7 +39,7 @@ const AboutProfile = () => {
             <img src={linkedin} width="60px" alt="linkedin" />
           </a>
           <a
-            href="lenny@b2bcontentlab.com"
+            href="lenny@mysupportengine"
             target="_blank"
             rel="noopener noreferrer"
           >

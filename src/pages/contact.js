@@ -8,7 +8,10 @@ import Contact from "../components/contact"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact" keywords={[`supportengine`, `contact us`, `form`]} />
+    <SEO
+      title="Contact"
+      keywords={[`supportengine`, `contact us`, `support engine contact form`]}
+    />
     <section className="container contact_c">
       <h2
         className="all__section--h2"
@@ -23,11 +26,11 @@ const ContactPage = () => (
       <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         You can send us an email directly at{" "}
         <a
-          href="lenny@b2bcontentlab.com"
+          href="lenny@mysupportengine"
           target="_blank"
           rel="noopener noreferrer"
         >
-          contact@supportengine.com
+          lenny@mysupportengine
         </a>{" "}
         or you can use the contact form below.
       </p>

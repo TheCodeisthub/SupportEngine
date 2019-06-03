@@ -10,7 +10,7 @@ const AboutPage = () => (
   <Layout>
     <SEO
       title="About"
-      keywords={[`supportengine`, `About us`, `customer support`]}
+      keywords={[`supportengine`, `About support engine`, `customer support`]}
     />
     <section className="container">
       <div className="about_wrapper">

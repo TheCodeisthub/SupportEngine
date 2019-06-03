@@ -13,7 +13,10 @@ import HomeSection5 from "../components/HomepageComponents/HomeSection5"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Home"
+      keywords={[`gatsby`, `Support engine Home Page`, `react`]}
+    />
     <HomeHeader>
       <HomeHeaderContent />
     </HomeHeader>

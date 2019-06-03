@@ -6,12 +6,12 @@ const AboutText = () => {
     <section className="sec2p">
       <p>
         Hi there, my name is Lenny Johnson and I'm the founder of SupportEngine.
-        I started this company early this year after being inspire by Brian
+        I started this company early this year after being Inspired by Brian
         Norris and all he was doing with WPCurve.
       </p>
       <br />
       <p>
-        I figured that if Wordpress support could be made more reliable and
+        I figured that if WordPress support could be made more reliable and
         affordable then why not customer support and so the idea for
         SupportEngine was born.
       </p>
@@ -33,11 +33,11 @@ const AboutText = () => {
         </a>{" "}
         or you can also email me at{" "}
         <a
-          href="lenny@b2bcontentlab.com"
+          href="lenny@mysupportengine"
           target="_blank"
           rel="noopener noreferrer"
         >
-          lenny@supportengine.com
+          lenny@mysupportengine
         </a>
       </p>
     </section>

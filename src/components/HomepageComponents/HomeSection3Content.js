@@ -10,18 +10,18 @@ export default function HomeSection3Content() {
       <div className="home__section3--content">
         <CardStyles>
           <img src={Icon1} width="105px" alt="icons" />
-          <h2>Proffessional</h2>
+          <h2>Professional</h2>
           <p>
             Our agents have years of customer support experience in startups and
-            local bussineses.
+            local businesses.
           </p>
         </CardStyles>
         <CardStyles>
           <img src={Icon2} width="105px" alt="icons" />
           <h2>Dedicated</h2>
           <p>
-            Out agents only work on your business. We don't charge per ticket so
-            there's no incentive to deal poorly with customers.
+            Our agents will only work on your business. We don't charge per
+            ticket so there's no incentive to deal poorly with customers.
           </p>
         </CardStyles>
         <CardStyles>

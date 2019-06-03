@@ -8,7 +8,7 @@ const TermsAndConditions = () => (
   <Layout>
     <SEO
       title="Terms of Service"
-      keywords={[`supportengine`, `Terms of Service`, `bussiness suport`]}
+      keywords={[`supportengine`, `Terms of Service`, `bussiness support`]}
     />
     <section className="container">
       <div className="t__container">
@@ -17,12 +17,14 @@ const TermsAndConditions = () => (
           <h3>1. Terms</h3>
           <p>
             By accessing the website at{" "}
-            <a href="http://supportengine.co">http://supportengine.co</a>, you
-            are agreeing to be bound by these terms of service, all applicable
-            laws and regulations, and agree that you are responsible for
-            compliance with any applicable local laws. If you do not agree with
-            any of these terms, you are prohibited from using or accessing this
-            site. The materials contained in this website are protected by
+            <a href="https://mysupportengine.com">
+              https://mysupportengine.com
+            </a>
+            , you are agreeing to be bound by these terms of service, all
+            applicable laws and regulations, and agree that you are responsible
+            for compliance with any applicable local laws. If you do not agree
+            with any of these terms, you are prohibited from using or accessing
+            this site. The materials contained in this website are protected by
             applicable copyright and trademark law.
           </p>
         </section>

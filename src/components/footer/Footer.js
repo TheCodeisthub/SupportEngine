@@ -13,7 +13,7 @@ export default function Footer() {
             marginTop: "8vh",
           }}
         >
-          All Right Reserved © {new Date().getFullYear()}
+          All rights reserved © {new Date().getFullYear()}
           {` `} Support Engine
         </p>
       </footer>

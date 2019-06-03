@@ -8,7 +8,7 @@ const PrivacyPolicy = () => (
   <Layout>
     <SEO
       title="Data Policy"
-      keywords={[`supportengine`, `Privacy Policy`, `bussiness suport`]}
+      keywords={[`supportengine`, `Privacy Policy`, `bussiness support`]}
     />
     <section className="container">
       <div className="p__container">
@@ -17,8 +17,8 @@ const PrivacyPolicy = () => (
           Your privacy is important to us. It is Support Engine's policy to
           respect your privacy regarding any information we may collect from you
           across our website,{" "}
-          <a href="http://supportengine.co">http://supportengine.co</a>, and
-          other sites we own and operate.
+          <a href="https://mysupportengine.com">https://mysupportengine.com</a>,
+          and other sites we own and operate.
         </p>
         <p>
           We only ask for personal information when we truly need it to provide

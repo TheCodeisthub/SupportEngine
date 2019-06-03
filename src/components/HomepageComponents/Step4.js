@@ -9,7 +9,7 @@ export default function Step4() {
         <Steps4 />
         <h2 className="sec2--h2">Support begins</h2>
         <p className="sec2--p">
-          The agent starts working on your bussiness and delighting customer.
+          The agent starts working on your business and delighting customers.
         </p>
       </aside>
       <aside className="item8">

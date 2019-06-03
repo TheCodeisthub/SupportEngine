@@ -20,22 +20,21 @@ class HomeSection4Content extends Component {
     return (
       <div className="container">
         <div className="faq__container">
+          <h2 className="faq--h2">Frequently asked questions (FAQ)</h2>
           <section className="faq-section">
-            <h2 className="faq--h2">Frequently asked questions (FAQ)</h2>
-
             <Toggle>
               {({ on, toggle }) => (
                 <ul>
                   <span className="drop-down--container" onClick={toggle}>
-                    <h4 className="faq--h4">Is Support 24/7?</h4>
+                    <h4 className="faq--h4">Is support 24/7?</h4>
                     <button className="btn_arrow">
                       <img src={toggleIcon} alt="dropdown icon" />
                     </button>
                   </span>
                   {on && (
                     <li>
-                      We don’t yet offer 24/7 support, we have only the standard
-                      8 hour support window.
+                      We don't yet offer 24/7 support, our support agents can
+                      only cover an 8 hour support window for your business.
                     </li>
                   )}
                 </ul>
@@ -48,7 +47,7 @@ class HomeSection4Content extends Component {
                   <ul>
                     <span className="drop-down--container" onClick={toggle}>
                       <h4 style={{ fontSize: "24px", color: "#3A3768" }}>
-                        Do you offer phone Support?
+                        Do you offer phone support?
                       </h4>
                       <button className="btn_arrow">
                         <img src={toggleIcon} alt="dropdown icon" />
@@ -57,7 +56,7 @@ class HomeSection4Content extends Component {
                     {on && (
                       <li>
                         Phone support isn’t currently available but will be
-                        soon. soon
+                        soon.
                       </li>
                     )}
                   </ul>
