@@ -13,8 +13,12 @@ class FooterLinks extends Component {
       {
         title: "Contact",
         id: 1,
-        path: <a href="lenny@mysupportengine">lenny@mysupportengine</a>,
-        name: "lenny@mysupportengine",
+        path: (
+          <a href="mailto:lenny@mysupportengine.com">
+            lenny@mysupportengine.com
+          </a>
+        ),
+        name: "lenny@mysupportengine.com",
       },
       {
         title: "Legal",

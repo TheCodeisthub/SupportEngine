@@ -39,7 +39,7 @@ const AboutProfile = () => {
             <img src={linkedin} width="60px" alt="linkedin" />
           </a>
           <a
-            href="lenny@mysupportengine"
+            href="mailto:lenny@mysupportengine.com"
             target="_blank"
             rel="noopener noreferrer"
           >

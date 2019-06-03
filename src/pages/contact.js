@@ -26,11 +26,11 @@ const ContactPage = () => (
       <p style={{ textAlign: "left", marginBottom: "10vh" }}>
         You can send us an email directly at{" "}
         <a
-          href="lenny@mysupportengine"
+          href="mailto:lenny@mysupportengine.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          lenny@mysupportengine
+          lenny@mysupportengine.com
         </a>{" "}
         or you can use the contact form below.
       </p>

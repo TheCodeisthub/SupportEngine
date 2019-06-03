@@ -33,11 +33,11 @@ const AboutText = () => {
         </a>{" "}
         or you can also email me at{" "}
         <a
-          href="lenny@mysupportengine"
+          href="mailto:lenny@mysupportengine.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          lenny@mysupportengine
+          lenny@mysupportengine.com
         </a>
       </p>
     </section>
