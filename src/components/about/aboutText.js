@@ -6,7 +6,7 @@ const AboutText = () => {
     <section className="sec2p">
       <p>
         Hi there, my name is Lenny Johnson and I'm the founder of SupportEngine.
-        I started this company early this year after being Inspired by Brian
+        I started this company early this year after being inspired by Brian
         Norris and all he was doing with WPCurve.
       </p>
       <br />

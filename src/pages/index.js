@@ -14,7 +14,7 @@ import HomeSection5 from "../components/HomepageComponents/HomeSection5"
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Home"
+      title="Outsourcing for fast growing businesses"
       keywords={[`gatsby`, `Support engine Home Page`, `react`]}
     />
     <HomeHeader>
