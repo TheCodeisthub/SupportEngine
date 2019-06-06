@@ -133,6 +133,19 @@ a:hover {
     margin-left: auto;
     margin-right: 10rem;
   }
+
+  .logo_small-screen {
+    @include for-tablet-landscape-up {
+      margin-left: 2.7rem;
+    }
+  }
+}
+
+.nav-lists {
+  @include for-tablet-landscape-up {
+    display: flex;
+    margin: 0;
+  }
 }
 
 // .nav--header {

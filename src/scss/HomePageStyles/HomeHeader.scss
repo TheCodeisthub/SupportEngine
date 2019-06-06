@@ -2,74 +2,105 @@
 
 .home__section1--bg {
   background: linear-gradient(180deg, #6c63ff 0%, #4834d4 100%);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin-bottom: 8vh;
 
-  .home__section1--container {
+  @include desktop {
+    height: 100vh !important;
+  }
+
+  @include for-tablet-landscape-up {
+    height: 225vh;
+  }
+}
+
+// .home__section1--bg {
+
+// }
+
+.home__section1--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  margin-top: 15vh;
+
+  @include for-tablet-landscape-up {
+    margin-top: 45vh;
+  }
+
+  @include for-ipad {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-
-    // display: grid;
-    // grid-template-columns: var(--g-temp-col-1);
     color: #fff;
     margin-top: 15vh;
-
-    @include desktop {
-      display: grid;
-      grid-gap: 0em;
-      grid-template-columns: var(--g-temp-col-2);
-      color: #fff;
-      text-align: left;
-      margin-top: 20vh;
-    }
   }
 
-  .home__section1--h3 {
-    width: 100vw;
-    font-weight: 500;
-    font-size: 6vw;
-    line-height: 30px;
-    padding: 0 2em 0 2em;
+  @include desktop {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-columns: var(--g-temp-col-2);
+    text-align: left;
+    margin-top: 20vh;
+  }
+}
 
-    @include desktop {
-      width: 598px;
-      // font-weight: bold;
-      font-size: 40px;
-      line-height: 49px;
-      padding: 0;
-    }
+.home__section1--h3 {
+  width: 100vw;
+  font-weight: 500;
+  font-size: 6vw;
+  line-height: 30px;
+  padding: 0 2em 0 2em;
+
+  @include for-tablet-landscape-up {
+    line-height: 60px;
   }
 
-  .home-section1--p {
-    width: 100%;
-    font-weight: 300;
-    font-size: 4vw;
+  @include desktop {
+    width: 598px;
+    // font-weight: bold;
+    font-size: 40px;
+    line-height: 49px;
+    padding: 0;
+  }
+}
+
+.home-section1--p {
+  width: 100%;
+  font-weight: 300;
+  font-size: 4vw;
+  line-height: 129.1%;
+  letter-spacing: 0.04em;
+  padding: 0 2em 0 2em;
+
+  margin-top: 1em;
+
+  @include desktop {
+    width: 530px;
+    font-size: 24px;
     line-height: 129.1%;
-    letter-spacing: 0.04em;
-    padding: 0 2em 0 2em;
-
-    margin-top: 1em;
-
-    @include desktop {
-      width: 530px;
-      font-size: 24px;
-      line-height: 129.1%;
-      /* or 31px */
-      letter-spacing: 0.01em;
-      padding: 0;
-    }
+    /* or 31px */
+    letter-spacing: 0.01em;
+    padding: 0;
   }
-  .home__section1--img {
-    width: 299.3px;
-    margin-top: 3em;
+}
 
-    @include desktop {
-      width: 650px;
-      margin-right: -9vw;
-    }
+.home__section1--img {
+  width: 299.3px;
+  margin-top: 3em;
+
+  @include for-tablet-landscape-up {
+    width: 600px;
+  }
+
+  @include desktop {
+    width: 650px;
+    margin-right: -9vw;
   }
 }

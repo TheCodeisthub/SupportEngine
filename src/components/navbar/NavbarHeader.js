@@ -11,7 +11,12 @@ class NavbarHeader extends Component {
       <HeaderWrapper>
         {/* <div className="nav__header--content"> */}
         <Link to="/">
-          <img src={logo} width="220px" alt="logo" />
+          <img
+            className="logo_small-screen"
+            src={logo}
+            width="220px"
+            alt="logo"
+          />
         </Link>
         <button
           className="nav-menu"
